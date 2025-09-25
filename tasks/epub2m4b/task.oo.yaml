@@ -1,0 +1,83 @@
+executor:
+  name: python
+  options:
+    entry: __init__.py
+inputs_def:
+  - handle: epub
+    json_schema:
+      type: string
+      ui:widget: file
+      ui:options:
+        filters:
+          - name: EPUB
+            extensions:
+              - epub
+        excludeAll: true
+  - handle: m4b
+    json_schema:
+      type: string
+      ui:widget: save
+      ui:options:
+        filters:
+          - extensions:
+              - m4b
+            name: M4B
+        excludeAll: true
+    value:
+    nullable: true
+  - handle: voice
+    json_schema:
+      type: string
+  - handle: key
+    json_schema:
+      contentMediaType: oomol/secret
+      type: string
+  - group: Option
+  - handle: region
+    json_schema:
+      enum:
+        - eastasia
+        - southeastasia
+        - australiaeast
+        - northeurope
+        - westeurope
+        - eastus
+        - eastus2
+        - southcentralus
+        - westcentralus
+        - westus
+        - westus2
+        - brazilsouth
+      ui:options:
+        labels:
+          - East Asia
+          - Southeast Asia
+          - Australia east
+          - North Europe
+          - West Europe
+          - East US
+          - East US 2
+          - South central US
+          - West central US
+          - west US
+          - West US 2
+          - Brazil south
+    value: eastasia
+  - handle: max_chapters
+    json_schema:
+      type: integer
+      minimum: 1
+    nullable: true
+    value:
+outputs_def:
+  - handle: m4b
+    json_schema:
+      type: string
+      ui:widget: save
+      ui:options:
+        excludeAll: true
+        filters:
+          - name: M4B
+            extensions:
+              - m4b
+title: EPUB to M4B
