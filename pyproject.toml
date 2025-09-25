@@ -6,9 +6,9 @@ authors = [
     {name = "TaoZeyu",email = "i@taozeyu.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.11,<3.14"
+requires-python = ">=3.10,<3.14"
 dependencies = [
-    "epub2speech (>=0.0.1,<0.0.2)"
+    "epub2speech (==0.0.3)"
 ]
 
 [tool.poetry]
