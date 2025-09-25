@@ -4,6 +4,7 @@ executor:
     entry: __init__.py
 inputs_def:
   - handle: epub
+    description: "%epub%"
     json_schema:
       type: string
       ui:widget: file
@@ -14,6 +15,7 @@ inputs_def:
               - epub
         excludeAll: true
   - handle: m4b
+    description: "%m4b%"
     json_schema:
       type: string
       ui:widget: save
@@ -26,6 +28,7 @@ inputs_def:
     value:
     nullable: true
   - handle: voice
+    description: "%azure-speech-key%"
     json_schema:
       type: string
   - handle: key
@@ -34,6 +37,7 @@ inputs_def:
       type: string
   - group: Option
   - handle: region
+    description: Azure Region
     json_schema:
       enum:
         - eastasia
@@ -64,13 +68,15 @@ inputs_def:
           - Brazil south
     value: eastasia
   - handle: max_chapters
+    description: "%key%"
     json_schema:
       type: integer
       minimum: 1
-    nullable: true
     value:
+    nullable: true
 outputs_def:
   - handle: m4b
+    description: "%m4b1%"
     json_schema:
       type: string
       ui:widget: save
@@ -81,3 +87,4 @@ outputs_def:
             extensions:
               - m4b
 title: EPUB to M4B
+description: "%epub-m4b-tts%"

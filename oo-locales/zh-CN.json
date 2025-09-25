@@ -1,0 +1,9 @@
+{
+  "epub-m4b-tts": "将 EPUB 电子书转化为 m4b 有声读物，将使用 TTS 将文字内容朗读出来。",
+  "epub": "EPUB 电子书文件地址",
+  "m4b": "转换后的 M4B 文件保存路径（若不填则指定特定路径）",
+  "azure-speech-key": "Azure Speech key",
+  "key": "限制最大朗读前多少章节",
+  "m4b1": "M4B 保存的文件路径",
+  "convert-epub-e-books-into-high-quality-audiobooks-using-azure-te": "使用 Azure 文本转语音技术将 EPUB 电子书转换为高质量的有声读物。"
+}

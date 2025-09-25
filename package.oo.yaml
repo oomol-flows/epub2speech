@@ -5,3 +5,9 @@ scripts:
   bootstrap: |
     poetry install --no-root
     apt update && apt install -y openssh-client ffmpeg
+icon: ./icon.png
+name: epub2speech
+displayName: EPUB to Speech
+description: "%convert-epub-e-books-into-high-quality-audiobooks-using-azure-te%"
+repository: https://github.com/oomol-flows/epub2speech
+releaseNotes: release the first version

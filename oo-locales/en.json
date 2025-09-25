@@ -1,0 +1,9 @@
+{
+  "epub-m4b-tts": "Convert EPUB e-books into m4b audiobooks, using TTS to read the text aloud.",
+  "epub": "EPUB eBook file path",
+  "m4b": "The save path for the converted M4B file (if left blank, a specific path will be designated)",
+  "azure-speech-key": "Azure Speech key",
+  "key": "Limit the maximum number of chapters before reading aloud",
+  "m4b1": "File path where M4B is saved",
+  "convert-epub-e-books-into-high-quality-audiobooks-using-azure-te": "Convert EPUB e-books into high-quality audiobooks using Azure Text-to-Speech technology."
+}
