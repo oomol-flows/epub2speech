@@ -1,0 +1,15 @@
+nodes:
+  - node_id: epub2m4b#1
+    title: "EPUB to M4B #1"
+    inputs_from:
+      - handle: epub
+      - handle: m4b
+        value: null
+      - handle: voice
+      - handle: key
+      - handle: region
+        value: eastasia
+      - handle: max_chapters
+        value: null
+    task: self::epub2m4b
+title: Transform
